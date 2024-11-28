@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/mbtamu",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\MBTamu\\": "app/",
+            "Modules\\MBTamu\\Database\\Factories\\": "database/factories/",
+            "Modules\\MBTamu\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\MBTamu\\Tests\\": "tests/"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "MBTamu",
+    "alias": "mbtamu",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\MBTamu\\Providers\\MBTamuServiceProvider"
+    ],
+    "files": []
+}

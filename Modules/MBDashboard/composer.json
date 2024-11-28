@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/mbdashboard",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\MBDashboard\\": "app/",
+            "Modules\\MBDashboard\\Database\\Factories\\": "database/factories/",
+            "Modules\\MBDashboard\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\MBDashboard\\Tests\\": "tests/"
+        }
+    }
+}

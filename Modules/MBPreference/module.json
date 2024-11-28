@@ -1,0 +1,11 @@
+{
+    "name": "MBPreference",
+    "alias": "mbpreference",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\MBPreference\\Providers\\MBPreferenceServiceProvider"
+    ],
+    "files": []
+}

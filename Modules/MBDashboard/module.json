@@ -1,0 +1,11 @@
+{
+    "name": "MBDashboard",
+    "alias": "mbdashboard",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\MBDashboard\\Providers\\MBDashboardServiceProvider"
+    ],
+    "files": []
+}
