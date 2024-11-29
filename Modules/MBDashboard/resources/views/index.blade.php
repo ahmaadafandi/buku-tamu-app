@@ -5,7 +5,7 @@
 
 @section('content')
 <div class="row">
-    <div class="col-md-12 col-lg-12">
+    {{-- <div class="col-md-12 col-lg-12">
        <div class="row row-cols-1">
           <div class="overflow-hidden d-slider1 ">
              <ul  class="p-0 m-0 mb-2 swiper-wrapper list-inline">
@@ -119,8 +119,8 @@
              <div class="swiper-button swiper-button-prev"></div>
           </div>
        </div>
-    </div>
-    <div class="col-md-12 col-lg-8">
+    </div> --}}
+    {{-- <div class="col-md-12 col-lg-8">
        <div class="row">
           <div class="col-md-12">
              <div class="card" data-aos="fade-up" data-aos-delay="800">
@@ -410,8 +410,8 @@
              </div>
           </div>
        </div>
-    </div>
-    <div class="col-md-12 col-lg-4">
+    </div> --}}
+    <div class="col-md-12 col-lg-12">
        <div class="row">
           <div class="col-md-12 col-lg-12">
              <div class="card credit-card-widget" data-aos="fade-up" data-aos-delay="900">
@@ -419,8 +419,8 @@
                    <div class="p-4 border border-white rounded primary-gradient-card">
                       <div class="d-flex justify-content-between align-items-center">
                          <div>
-                            <h5 class="font-weight-bold">VISA </h5>
-                            <P class="mb-0">PREMIUM ACCOUNT</P>  
+                            <h2 class="mb-2">SELAMAT DATANG DI PENGOLAHAN <br> <b>APLIKASI REGISTRASI TAMU DAN POJOK INFORMASI</b></h2>
+                            <P class="mb-0">PENGOLAHAN ADMINISTRASI</P>  
                          </div>
                          <div class="master-card-content">
                             <svg class="master-card-1 icon-60" width="60"  viewBox="0 0 24 24">
@@ -431,7 +431,7 @@
                             </svg>
                          </div>
                       </div>
-                      <div class="my-4">
+                      {{-- <div class="my-4">
                          <div class="card-number">
                             <span class="fs-5 me-2">5789</span>
                             <span class="fs-5 me-2">****</span>
@@ -446,11 +446,11 @@
                       <div class="d-flex align-items-center justify-content-between">
                          <h6>Mike Smith</h6>
                          <h6 class="ms-5">06/11</h6>
-                      </div>
+                      </div> --}}
                    </div>
                 </div>
                 <div class="card-body">
-                   <div class="flex-wrap mb-4 d-flex align-itmes-center justify-content-between">
+                   {{-- <div class="flex-wrap mb-4 d-flex align-itmes-center justify-content-between">
                       <div class="d-flex align-itmes-center me-0 me-md-4">
                          <div>
                             <div class="p-3 mb-2 rounded bg-soft-primary">
@@ -477,23 +477,22 @@
                             <small class="mb-0">Order Served</small>
                          </div>
                       </div>
-                   </div>
+                   </div> --}}
                    <div class="mb-4">
                       <div class="flex-wrap d-flex justify-content-between">
-                         <h2 class="mb-2">$405,012,300</h2>
                          <div>
-                            <span class="badge bg-success rounded-pill">YoY 24%</span>
+                            <span class="badge bg-success rounded-pill">Lakukan Pengolahan Data</span>
                          </div>
                       </div>
-                      <p class="text-info">Life time sales</p>
+                      <p class="text-info">Lakuan proses pengolahan data yang anda inginkan dengan cara yang mudah.</p>
                    </div>
                    <div class="grid-cols-2 d-grid gap-card">
-                      <button class="p-2 btn btn-primary text-uppercase">SUMMARY</button>
-                      <button class="p-2 btn btn-info text-uppercase">ANALYTICS</button>
+                      <a href="/mbtamu" class="p-2 btn btn-primary text-uppercase">Cek Daftar Tamu</a>
+                      <a href="/mbpreference" class="p-2 btn btn-info text-uppercase">Konfigurasi APLIKASI REGISTRASI TAMU DAN POJOK INFORMASI</a>
                    </div>
                 </div>
              </div>
-             <div class="card" data-aos="fade-up" data-aos-delay="500">
+             {{-- <div class="card" data-aos="fade-up" data-aos-delay="500">
                 <div class="text-center card-body d-flex justify-content-around">
                    <div>
                       <h2 class="mb-2">750<small>K</small></h2>
@@ -505,9 +504,9 @@
                       <p class="mb-0 text-gray">New Customers</p>
                    </div>
                 </div>
-             </div> 
+             </div>  --}}
           </div>
-          <div class="col-md-12 col-lg-12">
+          {{-- <div class="col-md-12 col-lg-12">
              <div class="card" data-aos="fade-up" data-aos-delay="600">
                 <div class="flex-wrap card-header d-flex justify-content-between">
                    <div class="header-title">
@@ -558,7 +557,7 @@
                    </div>
                 </div>
              </div>
-          </div>
+          </div> --}}
        </div>
     </div> 
  </div>

@@ -16,7 +16,7 @@
         gap: 20px;
         justify-content: center;
         flex-wrap: wrap; /* Responsif: Card akan rapat di layar kecil */
-        margin-top: 50px;
+        margin-top: 11%;
     }
 
     .button-container .card-button {
@@ -101,16 +101,28 @@
         }
     }
 
+    /* slide 1 */
+    #slide_1 .judul-utama-slide-1 {
+        font-size: 46px;
+    }
+
+    #slide_1 .judul-slide-1 {
+        font-size: 35px;
+        margin-top: 5%;
+        /* margin-bottom: 30%; */
+    }
+
+    @media (max-width: 768px) {
+        #slide_1 .judul-slide-1 {
+            font-size: 25px;
+        }
+    }
+
+
     /* slide 2 */
 
     #slide_2 .slides-form select, #slide_2 .slides-form textarea {
         margin: 5px !important;
-    }
-
-    @media (max-width: 768px) {
-        #slide_2 .slides-form select, #slide_2 .slides-form textarea {
-            margin: 0 !important;
-        }
     }
 
     /* sweetalert custome css */
@@ -122,19 +134,25 @@
 
     /* slide 3 */
     /* Tabel dan header */
+    #slide_3 .judul-slide-3 {
+        font-size: 35px;
+    }
+    
     table.table {
         width: 100%;
         border-collapse: collapse;
     }
 
     table.table thead tr {
-        background-color: rgba(169, 169, 169, 0.5); /* abu-abu transparan */
+        background-color: rgba(255, 255, 255, 0.5); /* putih transparan */
+        color: #000; /* warna teks hitam pada header */
+        font-size: 24px;
     }
 
     /* Baris pada body tabel */
     table.table tbody tr {
-        background-color: rgba(255, 255, 255, 0.5); /* putih transparan */
-        color: #000; /* warna teks hitam pada header */
+        background-color: rgba(169, 169, 169, 0.5); /* abu-abu transparan */ 
+        font-size: 22px;
     }
 
     table.table td {
@@ -178,6 +196,25 @@
     .dataTables_paginate a:hover {
         background-color: rgba(169, 169, 169, 0.7); /* Warna saat hover */
     }
+
+    @media (max-width: 768px) {
+        #slide_2 .slides-form select, #slide_2 .slides-form textarea {
+            margin: 0 !important;
+        }
+
+        /* slide 3 */
+        table.table thead tr {
+            font-size: 18px;
+        }
+
+        table.table tbody tr {
+            font-size: 16px;
+        }
+
+        #slide_3 .judul-slide-3 {
+            font-size: 25px;
+        }
+    }
 </style>
 @endpush
 
@@ -187,88 +224,170 @@
     <div class="content">
       <div class="container">
         <div class="wrap">
-          <div class="fix-12-12">
-            <div class="fix-9-12">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                width="528.000000pt" height="76.000000pt" viewBox="0 0 1328.000000 156.000000"
-                preserveAspectRatio="xMidYMid meet" class="wide ae-1 fromCenter">
-               
-               <g transform="translate(0.000000,156.000000) scale(0.100000,-0.100000)"
-               fill="white" stroke="none">
-               <path d="M8816 1294 c-189 -46 -346 -204 -391 -396 -42 -180 4 -353 131 -488
-               114 -121 259 -177 429 -167 247 14 445 177 500 409 92 392 -269 739 -669 642z
-               m221 -229 c151 -45 236 -237 179 -404 -28 -80 -103 -154 -180 -176 -144 -42
-               -294 36 -343 178 -22 66 -22 177 1 231 61 144 200 213 343 171z"/>
-               <path d="M340 776 l0 -516 224 0 c303 0 366 14 454 101 71 71 101 196 71 302
-               -13 47 -67 109 -115 132 l-36 17 36 33 c107 97 100 285 -14 375 -73 58 -101
-               63 -372 68 l-248 4 0 -516z m442 255 c23 -30 23 -73 -1 -102 -17 -21 -29 -24
-               -105 -28 l-86 -3 0 82 0 83 87 -5 c74 -4 89 -8 105 -27z m44 -384 c26 -30 30
-               -62 13 -100 -18 -40 -48 -51 -151 -55 l-98 -4 0 97 0 97 106 -4 c102 -3 107
-               -4 130 -31z"/>
-               <path d="M2130 775 l0 -515 115 0 115 0 2 185 3 186 109 -186 109 -185 129 0
-               c70 0 128 2 128 5 0 3 -61 98 -135 211 -74 113 -135 209 -135 214 0 5 63 82
-               141 172 l141 163 -128 3 c-70 1 -133 1 -140 -2 -6 -2 -55 -61 -108 -130 -53
-               -69 -101 -128 -106 -131 -7 -4 -10 86 -10 259 l0 266 -115 0 -115 0 0 -515z"/>
-               <path d="M4150 1175 l0 -115 105 0 105 0 0 -400 0 -400 130 0 130 0 0 400 0
-               400 100 0 100 0 0 115 0 115 -335 0 -335 0 0 -115z"/>
-               <path d="M10510 775 l0 -515 115 0 115 0 0 515 0 515 -115 0 -115 0 0 -515z"/>
-               <path d="M10910 1200 l0 -90 115 0 115 0 0 90 0 90 -115 0 -115 0 0 -90z"/>
-               <path d="M5055 1029 c-162 -52 -265 -201 -265 -383 0 -222 145 -387 353 -403
-               95 -7 173 15 227 64 l40 35 0 -41 0 -41 115 0 115 0 0 380 0 380 -115 0 -115
-               0 0 -36 0 -36 -42 36 c-76 66 -197 83 -313 45z m272 -231 c111 -73 101 -253
-               -16 -315 -57 -30 -136 -31 -191 -3 -93 48 -126 179 -68 268 41 61 88 83 169
-               79 52 -2 75 -8 106 -29z"/>
-               <path d="M6150 1041 c-45 -14 -88 -40 -109 -67 l-21 -27 0 42 0 41 -110 0
-               -110 0 0 -385 0 -385 115 0 115 0 0 216 c0 232 8 289 46 325 32 30 114 38 150
-               14 49 -32 54 -64 54 -320 l0 -235 115 0 115 0 0 223 c0 122 5 239 10 259 15
-               54 61 88 119 88 27 0 56 -7 70 -16 46 -32 51 -66 51 -319 l0 -235 116 0 115 0
-               -3 298 c-3 269 -5 300 -22 332 -54 99 -123 147 -229 157 -94 8 -165 -15 -228
-               -76 l-50 -48 -52 51 c-33 33 -67 56 -93 64 -45 13 -125 15 -164 3z"/>
-               <path d="M9967 1036 c-44 -16 -64 -30 -94 -65 l-23 -26 0 43 0 42 -110 0 -110
-               0 0 -385 0 -385 115 0 115 0 1 233 c0 250 6 287 50 319 36 27 97 33 142 14 62
-               -26 67 -49 67 -326 l0 -240 115 0 115 0 0 278 c0 314 -6 356 -66 421 -19 21
-               -58 49 -87 61 -65 29 -176 36 -230 16z"/>
-               <path d="M11647 1036 c-44 -16 -64 -30 -94 -65 l-23 -26 0 43 0 42 -110 0
-               -110 0 0 -385 0 -385 115 0 115 0 1 233 c0 250 6 287 50 319 36 27 97 33 142
-               14 62 -26 67 -49 67 -326 l0 -240 115 0 115 0 0 278 c0 314 -6 356 -66 421
-               -19 21 -58 49 -87 61 -65 29 -176 36 -230 16z"/>
-               <path d="M12438 1031 c-72 -23 -112 -48 -170 -108 -119 -122 -150 -303 -79
-               -448 100 -203 343 -291 539 -194 69 34 153 113 190 178 l23 41 -124 0 c-101 0
-               -127 -3 -138 -16 -41 -50 -170 -60 -226 -18 -28 21 -73 80 -73 95 0 5 130 9
-               289 9 l289 0 6 31 c9 45 -11 155 -39 216 -28 63 -101 143 -160 178 -94 54
-               -224 69 -327 36z m229 -207 c29 -22 69 -81 61 -90 -3 -2 -83 -3 -177 -2 l-172
-               3 23 35 c13 19 39 45 58 58 30 21 44 23 107 20 53 -2 79 -9 100 -24z"/>
-               <path d="M1230 762 c0 -211 3 -279 15 -320 34 -114 128 -188 252 -199 91 -7
-               148 9 195 57 l38 38 0 -39 0 -39 110 0 110 0 0 385 0 385 -115 0 -115 0 0
-               -230 c0 -251 -5 -279 -55 -318 -20 -16 -41 -22 -80 -22 -64 0 -100 24 -115 78
-               -5 20 -10 139 -10 265 l0 227 -115 0 -115 0 0 -268z"/>
-               <path d="M2940 762 c0 -211 3 -279 15 -320 34 -114 128 -188 252 -199 91 -7
-               148 9 195 57 l38 38 0 -39 0 -39 110 0 110 0 0 385 0 385 -115 0 -115 0 0
-               -230 c0 -251 -5 -279 -55 -318 -20 -16 -41 -22 -80 -22 -64 0 -100 24 -115 78
-               -5 20 -10 139 -10 265 l0 227 -115 0 -115 0 0 -268z"/>
-               <path d="M7130 762 c0 -211 3 -279 15 -320 34 -114 128 -188 252 -199 91 -7
-               148 9 195 57 l38 38 0 -39 0 -39 110 0 110 0 0 385 0 385 -115 0 -115 0 0
-               -230 c0 -251 -5 -279 -55 -318 -20 -16 -41 -22 -80 -22 -64 0 -100 24 -115 78
-               -5 20 -10 139 -10 265 l0 227 -115 0 -115 0 0 -268z"/>
-               <path d="M10910 645 l0 -385 115 0 115 0 0 385 0 385 -115 0 -115 0 0 -385z"/>
-               </g>
-               </svg>
-               
-            </div>
-            <div class="button play small white popupTrigger ae-2 fromCenter margin-top-6 margin-bottom-6" data-popup-id="9">
-              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use></svg>
-            </div>
-            <p class="ae-3">
-              <span class="opacity-8">Silahkan pilih <b>Tujuan</b> anda</span>
-            </p>
+          <div class="fix-12">
+            <img class="ae-1" src="{{ asset('./images/logo_sumutprov_baru.png') }}" alt="" width="100">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="328.000000pt" height="76.000000pt" viewBox="0 0 2698.000000 156.000000"
+            preserveAspectRatio="xMidYMid meet" class="wide ae-2 fromCenter">
+
+                <g transform="translate(0.000000,156.000000) scale(0.100000,-0.100000)"
+                fill="white" stroke="none">
+                <path d="M4087 1176 c-133 -49 -195 -159 -153 -269 23 -61 57 -90 171 -143 55
+                -25 108 -53 118 -62 24 -21 21 -64 -6 -90 -45 -43 -111 -17 -124 48 l-5 30
+                -96 0 -95 0 6 -49 c16 -133 114 -211 267 -211 174 0 279 109 256 264 -11 69
+                -57 114 -179 174 -57 27 -111 58 -120 67 -36 36 -6 95 49 95 24 0 54 -29 54
+                -53 0 -15 13 -17 96 -17 l97 0 -5 45 c-12 101 -104 175 -227 182 -41 2 -80 -2
+                -104 -11z"/>
+                <path d="M6616 1180 c-160 -41 -282 -182 -294 -340 -11 -163 76 -303 234 -377
+                52 -25 71 -28 159 -28 92 0 106 3 167 32 137 65 217 177 226 318 l5 75 -222 0
+                -221 0 0 -75 0 -75 110 0 c61 0 110 -4 110 -9 0 -19 -55 -74 -87 -87 -46 -20
+                -130 -17 -179 5 -90 41 -134 153 -104 263 39 141 242 187 334 77 24 -29 26
+                -29 130 -29 58 0 106 3 106 8 0 4 -13 30 -29 57 -65 113 -187 185 -324 191
+                -45 2 -99 -1 -121 -6z"/>
+                <path d="M7677 1176 c-133 -49 -195 -159 -153 -269 23 -61 57 -90 171 -143 55
+                -25 108 -53 118 -62 24 -21 21 -64 -6 -90 -45 -43 -111 -17 -124 48 l-5 30
+                -96 0 -95 0 6 -49 c16 -133 114 -211 267 -211 174 0 279 109 256 264 -11 69
+                -57 114 -179 174 -57 27 -111 58 -120 67 -36 36 -6 95 49 95 24 0 54 -29 54
+                -53 0 -15 13 -17 96 -17 l97 0 -5 45 c-12 101 -104 175 -227 182 -41 2 -80 -2
+                -104 -11z"/>
+                <path d="M10167 1176 c-133 -49 -195 -159 -153 -269 23 -61 57 -90 171 -143
+                55 -25 108 -53 118 -62 24 -21 21 -64 -6 -90 -45 -43 -111 -17 -124 48 l-5 30
+                -96 0 -95 0 6 -49 c16 -133 114 -211 267 -211 174 0 279 109 256 264 -11 69
+                -57 114 -179 174 -57 27 -111 58 -120 67 -36 36 -6 95 49 95 24 0 54 -29 54
+                -53 0 -15 13 -17 96 -17 l97 0 -5 45 c-12 101 -104 175 -227 182 -41 2 -80 -2
+                -104 -11z"/>
+                <path d="M17799 1171 c-105 -34 -191 -109 -238 -211 -22 -47 -26 -69 -26 -150
+                0 -88 3 -101 33 -162 144 -294 573 -287 710 11 22 48 26 70 26 151 0 81 -4
+                103 -26 151 -82 179 -290 270 -479 210z m216 -174 c87 -49 128 -178 86 -272
+                -27 -61 -45 -82 -93 -106 -64 -33 -168 -19 -221 29 -31 28 -58 91 -64 146 -6
+                58 22 139 60 174 63 57 161 69 232 29z"/>
+                <path d="M19239 1171 c-105 -34 -191 -109 -238 -211 -22 -47 -26 -69 -26 -150
+                0 -88 3 -101 33 -162 144 -294 573 -287 710 11 22 48 26 70 26 151 0 81 -4
+                103 -26 151 -82 179 -290 270 -479 210z m216 -174 c87 -49 128 -178 86 -272
+                -27 -61 -45 -82 -93 -106 -64 -33 -168 -19 -221 29 -31 28 -58 91 -64 146 -6
+                58 22 139 60 174 63 57 161 69 232 29z"/>
+                <path d="M22709 1171 c-105 -34 -191 -109 -238 -211 -22 -47 -26 -69 -26 -150
+                0 -88 3 -101 33 -162 144 -294 573 -287 710 11 22 48 26 70 26 151 0 81 -4
+                103 -26 151 -82 179 -290 270 -479 210z m216 -174 c87 -49 128 -178 86 -272
+                -27 -61 -45 -82 -93 -106 -64 -33 -168 -19 -221 29 -31 28 -58 91 -64 146 -6
+                58 22 139 60 174 63 57 161 69 232 29z"/>
+                <path d="M25797 1176 c-133 -49 -195 -159 -153 -269 23 -61 57 -90 171 -143
+                55 -25 108 -53 118 -62 24 -21 21 -64 -6 -90 -45 -43 -111 -17 -124 48 l-5 30
+                -96 0 -95 0 6 -49 c16 -133 114 -211 267 -211 174 0 279 109 256 264 -11 69
+                -57 114 -179 174 -57 27 -111 58 -120 67 -36 36 -6 95 49 95 24 0 54 -29 54
+                -53 0 -15 13 -17 96 -17 l97 0 -5 45 c-12 101 -104 175 -227 182 -41 2 -80 -2
+                -104 -11z"/>
+                <path d="M507 1173 c-4 -7 -231 -567 -278 -686 l-19 -47 103 0 103 0 19 55 18
+                56 130 -3 130 -3 17 -50 17 -50 101 -3 c56 -1 102 1 102 5 0 5 -65 170 -144
+                368 l-144 360 -75 3 c-41 2 -77 -1 -80 -5z m113 -338 c18 -60 35 -116 38 -122
+                3 -10 -15 -13 -72 -13 -42 0 -76 3 -76 6 0 4 14 52 31 108 17 56 33 109 36
+                119 2 10 6 17 8 15 2 -2 18 -52 35 -113z"/>
+                <path d="M1030 811 l0 -371 90 0 90 0 0 114 0 113 93 6 c120 8 163 23 214 74
+                96 96 95 273 -4 364 -62 58 -82 63 -290 67 l-193 4 0 -371z m333 188 c49 -22
+                60 -83 23 -126 -21 -25 -31 -28 -100 -31 l-76 -4 0 86 0 86 65 0 c35 0 75 -5
+                88 -11z"/>
+                <path d="M1670 810 l0 -370 205 0 205 0 0 85 0 85 -110 0 -110 0 0 285 0 285
+                -95 0 -95 0 0 -370z"/>
+                <path d="M2160 810 l0 -370 95 0 95 0 0 370 0 370 -95 0 -95 0 0 -370z"/>
+                <path d="M2500 810 l0 -370 95 0 94 0 3 157 3 158 100 -158 100 -157 107 0
+                c60 0 108 3 108 6 0 3 -54 82 -120 175 -67 93 -123 176 -126 184 -4 8 41 84
+                108 182 63 92 118 174 122 181 6 9 -16 12 -93 12 l-99 0 -104 -164 -103 -164
+                -3 164 -2 164 -95 0 -95 0 0 -370z"/>
+                <path d="M3427 1173 c-4 -7 -231 -567 -278 -686 l-19 -47 103 0 103 0 19 55
+                18 56 130 -3 130 -3 17 -50 17 -50 101 -3 c56 -1 102 1 102 5 0 5 -65 170
+                -144 368 l-144 360 -75 3 c-41 2 -77 -1 -80 -5z m113 -338 c18 -60 35 -116 38
+                -122 3 -10 -15 -13 -72 -13 -42 0 -76 3 -76 6 0 4 14 52 31 108 17 56 33 109
+                36 119 2 10 6 17 8 15 2 -2 18 -52 35 -113z"/>
+                <path d="M4530 810 l0 -370 95 0 95 0 0 370 0 370 -95 0 -95 0 0 -370z"/>
+                <path d="M5170 811 l0 -371 90 0 89 0 3 117 3 118 83 -118 84 -117 109 0 110
+                0 -100 124 -101 125 35 11 c112 37 173 180 133 311 -15 51 -69 114 -122 142
+                -37 19 -59 22 -228 25 l-188 4 0 -371z m346 166 c40 -47 26 -125 -27 -153 -16
+                -8 -53 -14 -84 -14 l-55 0 0 101 0 101 71 -4 c63 -3 74 -7 95 -31z"/>
+                <path d="M5820 810 l0 -370 205 0 205 0 0 85 0 85 -115 0 -115 0 0 65 0 65
+                110 0 110 0 0 85 0 85 -110 0 -110 0 0 50 0 50 115 0 115 0 0 85 0 85 -205 0
+                -205 0 0 -370z"/>
+                <path d="M7210 810 l0 -370 95 0 95 0 0 370 0 370 -95 0 -95 0 0 -370z"/>
+                <path d="M8050 1095 l0 -85 75 0 75 0 0 -285 0 -285 95 0 95 0 0 285 0 284 73
+                3 72 3 3 83 3 82 -246 0 -245 0 0 -85z"/>
+                <path d="M8610 811 l0 -371 90 0 89 0 3 117 3 118 83 -118 84 -117 109 0 110
+                0 -100 124 -101 125 35 11 c112 37 173 180 133 311 -15 51 -69 114 -122 142
+                -37 19 -59 22 -228 25 l-188 4 0 -371z m346 166 c40 -47 26 -125 -27 -153 -16
+                -8 -53 -14 -84 -14 l-55 0 0 101 0 101 71 -4 c63 -3 74 -7 95 -31z"/>
+                <path d="M9507 1173 c-4 -7 -231 -567 -278 -686 l-19 -47 103 0 103 0 19 55
+                18 56 130 -3 130 -3 17 -50 17 -50 101 -3 c56 -1 102 1 102 5 0 5 -65 170
+                -144 368 l-144 360 -75 3 c-41 2 -77 -1 -80 -5z m113 -338 c18 -60 35 -116 38
+                -122 3 -10 -15 -13 -72 -13 -42 0 -76 3 -76 6 0 4 14 52 31 108 17 56 33 109
+                36 119 2 10 6 17 8 15 2 -2 18 -52 35 -113z"/>
+                <path d="M10610 810 l0 -370 95 0 95 0 0 370 0 370 -95 0 -95 0 0 -370z"/>
+                <path d="M11160 1095 l0 -85 75 0 75 0 0 -285 0 -285 95 0 95 0 0 285 0 284
+                73 3 72 3 3 83 3 82 -246 0 -245 0 0 -85z"/>
+                <path d="M11937 1173 c-4 -7 -231 -567 -278 -686 l-19 -47 103 0 103 0 19 55
+                18 56 130 -3 130 -3 17 -50 17 -50 101 -3 c56 -1 102 1 102 5 0 5 -65 170
+                -144 368 l-144 360 -75 3 c-41 2 -77 -1 -80 -5z m113 -338 c18 -60 35 -116 38
+                -122 3 -10 -15 -13 -72 -13 -42 0 -76 3 -76 6 0 4 14 52 31 108 17 56 33 109
+                36 119 2 10 6 17 8 15 2 -2 18 -52 35 -113z"/>
+                <path d="M12460 810 l0 -370 85 0 85 0 1 273 0 272 77 -270 77 -270 65 0 65 0
+                77 270 77 270 0 -272 1 -273 85 0 85 0 0 370 0 371 -122 -3 -122 -3 -70 -232
+                c-39 -128 -73 -233 -76 -233 -3 0 -37 105 -75 233 l-71 232 -122 3 -122 3 0
+                -371z"/>
+                <path d="M13380 922 c0 -292 6 -331 65 -399 46 -54 107 -83 192 -90 129 -11
+                234 43 285 145 22 45 23 57 26 325 l3 277 -95 0 -96 0 0 -249 c0 -256 -6 -303
+                -40 -321 -25 -13 -76 -13 -102 1 -42 23 -48 63 -48 324 l0 245 -95 0 -95 0 0
+                -258z"/>
+                <path d="M14380 810 l0 -372 188 4 c208 5 260 17 335 79 162 134 151 474 -21
+                592 -81 56 -103 61 -309 65 l-193 4 0 -372z m376 173 c49 -35 69 -85 69 -178
+                0 -62 -4 -88 -20 -114 -35 -59 -67 -75 -156 -80 l-79 -3 0 202 0 202 78 -3
+                c60 -3 84 -9 108 -26z"/>
+                <path d="M15327 1173 c-4 -7 -231 -567 -278 -686 l-19 -47 103 0 103 0 19 55
+                18 56 130 -3 130 -3 17 -50 17 -50 101 -3 c56 -1 102 1 102 5 0 5 -65 170
+                -144 368 l-144 360 -75 3 c-41 2 -77 -1 -80 -5z m113 -338 c18 -60 35 -116 38
+                -122 3 -10 -15 -13 -72 -13 -42 0 -76 3 -76 6 0 4 14 52 31 108 17 56 33 109
+                36 119 2 10 6 17 8 15 2 -2 18 -52 35 -113z"/>
+                <path d="M15850 810 l0 -370 90 0 90 0 2 220 3 221 139 -221 139 -220 83 0 84
+                0 0 370 0 370 -90 0 -90 0 -2 -227 -3 -227 -140 227 -140 227 -82 0 -83 0 0
+                -370z"/>
+                <path d="M16920 811 l0 -371 90 0 90 0 0 114 0 113 93 6 c120 8 163 23 214 74
+                96 96 95 273 -4 364 -62 58 -82 63 -290 67 l-193 4 0 -371z m333 188 c49 -22
+                60 -83 23 -126 -21 -25 -31 -28 -100 -31 l-76 -4 0 86 0 86 65 0 c35 0 75 -5
+                88 -11z"/>
+                <path d="M18670 912 c0 -291 -4 -312 -55 -312 -26 0 -55 33 -55 62 0 16 -11
+                18 -100 18 l-100 0 0 -26 c0 -77 51 -158 123 -197 33 -17 59 -22 122 -22 90 0
+                126 14 188 73 61 59 67 95 67 404 l0 268 -95 0 -95 0 0 -268z"/>
+                <path d="M19870 810 l0 -370 95 0 94 0 3 157 3 158 100 -158 100 -157 107 0
+                c60 0 108 3 108 6 0 3 -54 82 -120 175 -67 93 -123 176 -126 184 -4 8 41 84
+                108 182 63 92 118 174 122 181 6 9 -16 12 -93 12 l-99 0 -104 -164 -103 -164
+                -3 164 -2 164 -95 0 -95 0 0 -370z"/>
+                <path d="M20870 810 l0 -370 95 0 95 0 0 370 0 370 -95 0 -95 0 0 -370z"/>
+                <path d="M21200 810 l0 -370 90 0 90 0 2 220 3 221 139 -221 139 -220 83 0 84
+                0 0 370 0 370 -90 0 -90 0 -2 -227 -3 -227 -140 227 -140 227 -82 0 -83 0 0
+                -370z"/>
+                <path d="M21960 810 l0 -370 90 0 90 0 0 140 0 139 108 3 107 3 3 83 3 82
+                -111 0 -110 0 0 60 0 60 110 0 110 0 0 85 0 85 -200 0 -200 0 0 -370z"/>
+                <path d="M23330 811 l0 -371 90 0 89 0 3 117 3 118 83 -118 84 -117 109 0 110
+                0 -100 124 -101 125 35 11 c112 37 173 180 133 311 -15 51 -69 114 -122 142
+                -37 19 -59 22 -228 25 l-188 4 0 -371z m346 166 c40 -47 26 -125 -27 -153 -16
+                -8 -53 -14 -84 -14 l-55 0 0 101 0 101 71 -4 c63 -3 74 -7 95 -31z"/>
+                <path d="M23980 810 l0 -370 85 0 85 0 1 273 0 272 77 -270 77 -270 65 0 65 0
+                77 270 77 270 0 -272 1 -273 85 0 85 0 0 370 0 371 -122 -3 -122 -3 -70 -232
+                c-39 -128 -73 -233 -76 -233 -3 0 -37 105 -75 233 l-71 232 -122 3 -122 3 0
+                -371z"/>
+                <path d="M25137 1173 c-4 -7 -231 -567 -278 -686 l-19 -47 103 0 103 0 19 55
+                18 56 130 -3 130 -3 17 -50 17 -50 101 -3 c56 -1 102 1 102 5 0 5 -65 170
+                -144 368 l-144 360 -75 3 c-41 2 -77 -1 -80 -5z m113 -338 c18 -60 35 -116 38
+                -122 3 -10 -15 -13 -72 -13 -42 0 -76 3 -76 6 0 4 14 52 31 108 17 56 33 109
+                36 119 2 10 6 17 8 15 2 -2 18 -52 35 -113z"/>
+                <path d="M26240 810 l0 -370 95 0 95 0 0 370 0 370 -95 0 -95 0 0 -370z"/>
+                </g>
+            </svg>
+            {{-- <span class="ae-3 judul-utama-slide-1"><b> APLIKASI REGISTRASI TAMU DAN POJOK INFORMASI </b></span> --}}
+            <span class="ae-3 judul-slide-1"><b>Badan Keuangan dan Aset Daerah <br/> Provinsi Sumatera Utara </b></span>
             <div class="button-container">
                 <div class="card-button ae-4 fromCenter">
                     <div class="header">
                         <div class="header-content">
                             <img src="{{ asset('frontend/assets/img/tamu.png') }}" alt="registrasi tamu" width="100"> <h3>Registrasi Tamu</h3>
-                        </div> <br>
+                        </div> <br/>
                         <div class="description">
-                            <h6 style="margin-bottom: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, fuga?</h6>
+                            <h6 style="margin-bottom: 20px;">Silahkan daftarkan diri anda di buku tamu kami</h6>
                             <a class="button blue gradient crop ae-3" href="#slide_2">Get Started</a>
                         </div>
                     </div>
@@ -280,7 +399,7 @@
                             <img src="{{ asset('frontend/assets/img/informasi.png') }}" alt="pojok informasi" width="35"> <h3>Pojok Informasi</h3>
                         </div> <br>
                         <div class="description">
-                            <h6 style="margin-bottom: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, fuga?</h6>
+                            <h6 style="margin-bottom: 20px;">Ayo telusuri informasi yang anda butuhkan dalam kunjungan anda</h6>
                             <a class="button blue gradient crop ae-3" href="#slide_3">Get Started</a>
                         </div>
                     </div>
@@ -292,7 +411,7 @@
                             <img src="{{ asset('frontend/assets/img/survey kepuasan.png') }}" alt="survey kepuasan" width="100"> <h3>Survey Kepuasan</h3>
                         </div> <br>
                         <div class="description">
-                            <h6 style="margin-bottom: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, fuga?</h6>
+                            <h6 style="margin-bottom: 20px;">Terima kasih atas partisipasi anda dalam memberikan penilaian terhadap layanan kami</h6>
                             <a class="button blue gradient crop ae-3">Get Started</a>
                         </div>
                     </div>
@@ -302,10 +421,10 @@
         </div>
       </div>
     </div>
-    <div class="background" style="background-image: url({{ asset('frontend/assets/img/background/img-09.jpg') }})"></div>
+    <div class="background" style="background-image: url({{ $preference->background_s1 }})"></div>
   </section>
 
-  <!-- Popup Video -->
+  {{-- Popup Video  --}}
   <div class="popup autoplay" data-popup-id="9">
     <div class="close">
       <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg>
@@ -323,14 +442,14 @@
     </div>
   </div>
 
-  <!-- Slide 2 (#15) -->
+  {{-- Slide 2 (#15) --}}
   <section id="slide_2" class="slide fade-6 kenBurns fromLeft">
     <div class="content">
       <div class="container">
         <div class="wrap">
           <div class="fix-12-12">
             <div class="fix-7-12 left toRight">
-                <h1 class="ae-1">Silahkan isi data anda.</h1>
+                <h2 class="ae-1">SILAHKAN ISI DATA ANDA</h2>
                 <form action="javascript:;" id="formtamu" autocomplete="off" class="slides-form margin-bottom-3">
                     @csrf
                     <select class="wide ae-3" name="bidang" id="bidang" style="width: 610px !important;">
@@ -350,77 +469,10 @@
         </div>
       </div>
     </div>
-    <div class="background" style="background-image: url({{ asset('frontend/assets/img/background/img-15.jpg') }})"></div>
+    <div class="background" style="background-image: url({{ $preference->background_s2 }})"></div>
   </section>
 
-  <!-- Slide 3 (#14) -->
-  {{-- <section class="slide fade-6 kenBurns fromRight">
-    <div class="content">
-      <div class="container">
-        <div class="wrap">
-          <div class="fix-12-12">
-            <div class="fix-6-12 left toLeft">
-              <h1 class="ae-1">Designers are meant to be loved, not to be understood.</h1>
-              <p class="ae-2"><span class="opacity-8">You must forget all your theories, all your ideas before the subject. What part of these is really your own will be expressed in your&nbsp;expression.</span></p>
-              <a class="button blue gradient crop ae-3">Get Started</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="background" style="background-image: url({{ asset('frontend/assets/img/background/img-14.jpg') }})"></div>
-  </section> --}}
-
-  <!-- Slide 4 (#89) -->
-  {{-- <section class="slide fade-6 kenBurns">
-    <div class="content">
-      <div class="container">
-        <div class="wrap">
-          <div class="fix-12-12">
-            <ul class="flex left">
-              <li class="col-6-12 fromBottomLeft">
-                <p class="opacity-6 margin-bottom-2 ae-1">Case study</p>
-                <h1 class="ae-2">The Secret of Success</h1>
-                <div class="ae-3">
-                  <p class="opacity-8">
-                    No matter how many times your amazing, absolutely brilliant work is rejected by the client, for whatever dopey, arbitrary reason, there is often another amazing, absolutely brilliant solution possible.
-                  </p>
-                </div>
-                <ul class="flex">
-                  <li class="col-6-12 ae-3">
-                    <h3 class="margin-top-3">Camera</h3>
-                    <p class="tiny opacity-6">Scan entire conversations in a chat-like view.</p>
-                  </li>
-                  <li class="col-6-12 ae-4">
-                    <h3 class="margin-top-3">Messages</h3>
-                    <p class="tiny opacity-6">Quickly swipe messages to your archive or trash.</p>
-                  </li>
-                  <li class="col-6-12 ae-5">
-                    <h3 class="margin-top-3">Music Center</h3>
-                    <p class="tiny opacity-6">Unforgettable feelings through a quality music.</p>
-                  </li>
-                  <li class="col-6-12 ae-6">
-                    <h3 class="margin-top-3">Channels</h3>
-                    <p class="tiny opacity-6">Read reviews, compare customer ratings.</p>
-                  </li>
-                </ul>
-              </li>
-              <li class="col-1-12">&nbsp;</li>
-              <li class="col-5-12 bottom">
-                <div class="videoThumbnail shadow rounded popupTrigger margin-bottom-3 ae-7" data-popup-id="89-3">
-                  <img src="assets/img/image-89-1.jpg" class="wide" alt="Video Thumbnail" />
-                </div>
-                <img src="assets/img/image-89-2.jpg" data-action="zoom" class="shadow rounded ae-8" alt="Image" />
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="background" style="background-image: url({{ asset('frontend/assets/img/background/img-89.jpg') }})"></div>
-  </section> --}}
-
-  <!-- Popup Video -->
+  {{-- Popup Video --}}
   <div class="popup autoplay" data-popup-id="89-3">
     <div class="close">
       <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg>
@@ -438,33 +490,38 @@
     </div>
   </div>
 
-  <!-- Slide 5 (#85) -->
+  {{-- Slide 3 (#85) --}}
   <section id="slide_3" class="slide fade-6 kenBurns">
     <div class="content">
       <div class="container">
         <div class="wrap">
-          <div class="fix-9-12">
-            <h1 class="ae-1">Daftar Tamu Hari Ini</h1>
-            <table id="yajra-dataTable" class="table">
+          <div class="fix-12">
+            <h1 class="ae-1 judul-slide-3"><b>DAFTAR REGISTRASI TAMU HARI INI</b></h1>
+            <table id="yajra-dataTable" class="ae-2 table">
                 <thead>
                     <tr>
-                        <td>Tanggal</td>
-                        <td>Bidang</td>
+                        <td style="width: 2%;">No.</td>
+                        <td style="width: 10%;">Tanggal</td>
+                        <td>Bidang Tujuan</td>
                         <td>Asal Instansi</td>
-                        <td>Tujuan</td>
+                        <td>Keperluan</td>
                     </tr>
                 </thead>
                 <tbody>
                 </tbody>
             </table>
           </div>
+          <!-- Tambahkan Footer untuk Waktu -->
+        <footer class="ae-3 time-footer" style="text-align: center; margin-top: 20px; font-size: 24px;">
+            <span id="current-time"></span>
+        </footer>
         </div>
       </div>
     </div>
-    <div class="background" style="background-image: url({{ asset('frontend/assets/img/background/img-85.jpg') }})"></div>
+    <div class="background" style="background-image: url({{ $preference->background_s3 }})"></div>
   </section>
 
-  <!-- Slide 6 (#95) -->
+  {{-- Slide 4 (#95) --}}
   <section id="slide_4" class="slide fade-6 kenBurns">
     <div class="content">
       <div class="container">
@@ -489,13 +546,13 @@
         </div>
       </div>
     </div>
-    <div class="background" style="background-image: url({{ asset('frontend/assets/img/background/img-95.jpg') }})"></div>
+    <div class="background" style="background-image: url({{ $preference->background_s4 }})"></div>
   </section>
 
 @endsection
 
 @push('scripts')
-<!-- Pemuatan JS DataTables -->
+{{-- Pemuatan JS DataTables --}}
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
 <script>
@@ -506,11 +563,13 @@
         tabledata = $('#yajra-dataTable').DataTable({
             processing: true,
             serverSide: true,
+            paging: false,
+            searching: false,
             ajax: "{{ route('frontend.data') }}",
             columns: [
-                // { data: 'no', name:'id', render: function (data, type, row, meta) {
-                //     return meta.row + meta.settings._iDisplayStart + 1;
-                // }},
+                { data: 'no', name:'id', render: function (data, type, row, meta) {
+                     return meta.row + meta.settings._iDisplayStart + 1;
+                }},
                 {data: 'tanggal', name: 'tanggal'},
                 {data: 'bidang', name: 'bidang'},
                 {data: 'instansi_asal', name: 'instansi_asal'},
@@ -611,5 +670,45 @@
             });
         }
     });
+
+    // Fungsi untuk mendapatkan nama hari dalam bahasa Indonesia
+    function getIndonesianDay(dayIndex) {
+        const days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+        return days[dayIndex];
+    }
+
+    // Fungsi untuk mendapatkan nama bulan dalam bahasa Indonesia
+    function getIndonesianMonth(monthIndex) {
+        const months = [
+            "Januari", "Februari", "Maret", "April", "Mei", "Juni", 
+            "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+        ];
+        return months[monthIndex];
+    }
+
+    // Fungsi untuk memperbarui waktu
+    function updateTime() {
+        const now = new Date();
+        const dayName = getIndonesianDay(now.getDay());
+        const date = now.getDate();
+        const monthName = getIndonesianMonth(now.getMonth());
+        const year = now.getFullYear();
+
+        // Format waktu
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+
+        const formattedTime = `
+                <i class="fa fa-calendar"></i> ${dayName}, ${date} ${monthName} ${year} 
+                <span style="margin-left: 15px;"><i class="fa fa-clock"></i> ${hours}:${minutes}:${seconds}</span>`;
+        document.getElementById('current-time').innerHTML = formattedTime;
+    }
+
+    // Jalankan updateTime setiap detik
+    setInterval(updateTime, 1000);
+
+    // Panggil pertama kali saat halaman dimuat
+    updateTime();
 </script>
 @endpush

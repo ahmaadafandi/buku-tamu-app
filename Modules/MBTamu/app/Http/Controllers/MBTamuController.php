@@ -71,6 +71,9 @@ class MBTamuController extends Controller
      */
     public function store(Request $request)
     {
+        // Mengatur zona waktu ke Asia/Jakarta
+        date_default_timezone_set('Asia/Jakarta');
+        
         try {
             // Validasi data
             $validatedData = $request->validate([

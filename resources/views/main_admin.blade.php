@@ -74,7 +74,7 @@
                 
                 
                 
-                <h4 class="logo-title">Hope UI</h4>
+                <h4 class="logo-title">siTamuJo</h4>
             </a>
             <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
                 <i class="icon">
@@ -1109,8 +1109,8 @@
                       <div class="col-md-12">
                           <div class="flex-wrap d-flex justify-content-between align-items-center">
                               <div>
-                                  <h1>Hello Devs!</h1>
-                                  <p>We are on a mission to help developers like you build successful projects for FREE.</p>
+                                  <h1>Hello {{ auth()->user()->name }}!</h1>
+                                  <p>Kami akan membantumu mengkonfigurasi APLIKASI REGISTRASI TAMU DAN POJOK INFORMASI dengan cara yang mudah, Have Fun! 😊</p>
                               </div>
                               <div>
                                   <a href="" class="btn btn-link btn-soft-light">

@@ -10,7 +10,7 @@
     <div class="sections desktop">
       <div class="left">
         <a href="https://designmodo.com/?u=3165" title="Slides Framework">
-          <img src="{{ asset('./images/logo_sumutprov_baru.png') }}" alt="" width="50">
+          <img src="{{ $preference->logo }}" alt="" width="550">
         </a>
       </div>
       <div class="center">

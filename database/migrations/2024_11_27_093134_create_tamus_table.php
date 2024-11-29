@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('bidang', 150);
             $table->string('nama', 150);
             $table->string('no_hp', 150);
-            $table->string('email')->unique();
+            $table->string('email', 150);
             $table->string('instansi_asal', 150);
             $table->text('tujuan');
             $table->boolean('status')->default(true);
